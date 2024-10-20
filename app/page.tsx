@@ -12,12 +12,7 @@ const Home = async () => {
     );
   }
 
-  return (
-    <>
-      <Link href="/profile">Profile</Link>
-      <a href="/api/auth/logout">Logout</a>
-    </>
-  );
+  return <>Home page</>;
 };
 
 export default Home;
