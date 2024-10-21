@@ -6,6 +6,8 @@ import {
 } from "@headlessui/react";
 import { Cog6ToothIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import { navigation } from "./../constants/navigation";
+import Link from "next/link";
+import Image from "next/image";
 
 type SidebarProps = {
   sidebarOpen: boolean;
@@ -52,10 +54,12 @@ export const Sidebar = ({
             </TransitionChild>
             <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4 ring-1 ring-white/10">
               <div className="flex h-16 shrink-0 items-center">
-                <img
-                  alt="Your Company"
+                <Image
+                  alt="Store mag"
                   src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
                   className="h-8 w-auto"
+                  width={38}
+                  height={32}
                 />
               </div>
               <nav className="flex flex-1 flex-col">
@@ -64,7 +68,7 @@ export const Sidebar = ({
                     <ul role="list" className="-mx-2 space-y-1">
                       {navigation.map((item) => (
                         <li key={item.name}>
-                          <a
+                          <Link
                             href={item.href}
                             className={classNames(
                               item.current
@@ -78,13 +82,13 @@ export const Sidebar = ({
                               className="h-6 w-6 shrink-0"
                             />
                             {item.name}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
                   </li>
                   <li className="mt-auto">
-                    <a
+                    <Link
                       href="#"
                       className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white"
                     >
@@ -93,7 +97,7 @@ export const Sidebar = ({
                         className="h-6 w-6 shrink-0"
                       />
                       Settings
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -105,10 +109,12 @@ export const Sidebar = ({
       <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
         <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-gray-900 px-6 pb-4">
           <div className="flex h-16 shrink-0 items-center">
-            <img
+            <Image
               alt="Your Company"
               src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
               className="h-8 w-auto"
+              width={38}
+              height={32}
             />
           </div>
           <nav className="flex flex-1 flex-col">
@@ -117,7 +123,7 @@ export const Sidebar = ({
                 <ul role="list" className="-mx-2 space-y-1">
                   {navigation.map((item) => (
                     <li key={item.name}>
-                      <a
+                      <Link
                         href={item.href}
                         className={classNames(
                           item.current
@@ -131,14 +137,14 @@ export const Sidebar = ({
                           className="h-6 w-6 shrink-0"
                         />
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </li>
 
               <li className="mt-auto">
-                <a
+                <Link
                   href="#"
                   className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white"
                 >
@@ -147,7 +153,7 @@ export const Sidebar = ({
                     className="h-6 w-6 shrink-0"
                   />
                   Settings
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
