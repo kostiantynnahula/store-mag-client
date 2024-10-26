@@ -1,6 +1,6 @@
 import { Bars3Icon, BellIcon } from "@heroicons/react/24/outline";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
-import { NavbarProfile } from "../components/navbar/navbar-profile";
+import { NavbarProfile } from "../navbar/navbar-profile";
 
 type NavbarProps = {
   setSidebarOpen: (isOpen: boolean) => void;

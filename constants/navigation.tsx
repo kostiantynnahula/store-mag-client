@@ -1,7 +1,7 @@
 import {
   CalendarIcon,
-  ChartPieIcon,
-  DocumentDuplicateIcon,
+  // ChartPieIcon,
+  // DocumentDuplicateIcon,
   MapPinIcon,
   HomeIcon,
   UsersIcon,
@@ -21,6 +21,6 @@ export const navigation = [
   },
   { name: "Stores", href: "stores", icon: MapPinIcon, current: false },
   { name: "Schedule", href: "schedule", icon: CalendarIcon, current: false },
-  { name: "Documents", href: "/", icon: DocumentDuplicateIcon, current: false },
-  { name: "Reports", href: "/", icon: ChartPieIcon, current: false },
+  // { name: "Documents", href: "/", icon: DocumentDuplicateIcon, current: false },
+  // { name: "Reports", href: "/", icon: ChartPieIcon, current: false },
 ];

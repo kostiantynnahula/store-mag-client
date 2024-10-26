@@ -5,7 +5,7 @@ import {
   TransitionChild,
 } from "@headlessui/react";
 import { Cog6ToothIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import { navigation } from "./../constants/navigation";
+import { navigation } from "../../constants/navigation";
 import Link from "next/link";
 import Image from "next/image";
 

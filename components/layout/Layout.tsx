@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Sidebar } from "./sidebar";
-import { Navbar } from "./navbar";
+import { Sidebar } from "./Sidebar";
+import { Navbar } from "./Navbar";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
